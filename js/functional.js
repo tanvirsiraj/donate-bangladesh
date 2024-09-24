@@ -4,19 +4,22 @@ document
   .getElementById("donation-for-Noakhali")
   .addEventListener("click", function () {
     const donateAmount = getDonatedAmount("donation-amount-1");
+    if (donateAmount <= 0 || isNaN(donateAmount)) {
+      alert("Invalid Donation amount");
+    } else {
+      setDonatedAmount("donate-balance1", donateAmount);
 
-    setDonatedAmount("donate-balance1", donateAmount);
+      setMainBalance(donateAmount);
 
-    setMainBalance(donateAmount);
+      const currentDate = new Date();
+      const formattedDate = currentDate.toString();
+      const date = `Date: ${formattedDate}`;
 
-    const currentDate = new Date();
-    const formattedDate = currentDate.toString();
-    const date = `Date: ${formattedDate}`;
+      const newDonatedAmount = `${donateAmount} Taka is donated for Flood at Noakhali, Bangladesh`;
 
-    const newDonatedAmount = `${donateAmount} Taka is donated for Flood at Noakhali, Bangladesh`;
-
-    allDonation.push({ newDonatedAmount, date });
-    console.log(allDonation);
+      allDonation.push({ newDonatedAmount, date });
+      console.log(allDonation);
+    }
   });
 
 document
