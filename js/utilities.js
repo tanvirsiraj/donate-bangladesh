@@ -15,6 +15,7 @@ function setDonatedAmount(id, newDonatedAmount) {
 
 function setMainBalance(donateAmount) {
   const previousTotalBalanceField = document.getElementById("balance");
+
   const previousTotalBalance = document.getElementById("balance").innerText;
   const currentTotalBalance = parseFloat(previousTotalBalance) - donateAmount;
   previousTotalBalanceField.innerText = currentTotalBalance;

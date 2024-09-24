@@ -65,21 +65,21 @@
       <div
         class="container mx-auto flex justify-center items-center gap-4 mt-10 md:mt-20"
       >
-        <button id="donation" class="btn bg-primaryColor font-semibold text-xl">
+        <a id="donation" class="btn bg-primaryColor font-semibold text-xl">
           Donation
-        </button>
-        <button
+        </a>
+        <a
           id="history"
           class="btn btn-outline font-semibold text-xl text-[#11111170]"
         >
           History
-        </button>
+        </a>
       </div>
     </header>
     <main
       class="container mx-auto mb-[50px] md:mb-[100px] mt-[30px] md:mt-[50px] px-2 md:px-0"
     >
-      <section class="space-y-6">
+      <section id="donation-part" class="space-y-6">
         <!-- for Noakhali  -->
         <div
           class="grid md:grid-cols-2 md:gap-8 lg:card-side border p-4 md:p-7 rounded-lg"
@@ -96,7 +96,7 @@
           >
             <div class="flex gap-2 items-center mt-8 md:mt-0">
               <img class="w-[28px] h-[28px]" src="./assets/coin.png" alt="" />
-              <div class="text-xl font-medium text-[#11111170]">
+              <div class="text-xl font-medium">
                 <span id="donate-balance1">0</span>
                 <span>BDT</span>
               </div>
@@ -147,7 +147,7 @@
           >
             <div class="flex gap-2 items-center mt-8 md:mt-0">
               <img class="w-[28px] h-[28px]" src="./assets/coin.png" alt="" />
-              <div class="text-xl font-medium text-[#11111170]">
+              <div class="text-xl font-medium">
                 <span id="donate-balance2">0</span>
                 <span>BDT</span>
               </div>
@@ -200,7 +200,7 @@
           >
             <div class="flex gap-2 items-center mt-8 md:mt-0">
               <img class="w-[28px] h-[28px]" src="./assets/coin.png" alt="" />
-              <div class="text-xl font-medium text-[#11111170]">
+              <div class="text-xl font-medium">
                 <span id="donate-balance3">0</span>
                 <span>BDT</span>
               </div>
@@ -239,8 +239,9 @@
           </div>
         </div>
       </section>
+      <section id="donated-history" class="flex flex-col gap-y-6"></section>
     </main>
+    <script src="./js/utilities.js"></script>
+    <script src="./js/functional.js"></script>
   </body>
-  <script src="./js/utilities.js"></script>
-  <script src="./js/functional.js"></script>
 </html>
