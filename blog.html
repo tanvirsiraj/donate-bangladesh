@@ -62,10 +62,12 @@
         </div>
       </div>
     </header>
-    <main class="container mx-auto">
+    <main class="container mx-auto px-2 md:px-0">
       <section>
         <div class="flex items-center gap-4">
-          <h1 class="my-8 md:my-16 text-3xl font-bold">Important FAQ</h1>
+          <h1 class="my-8 md:my-16 text-xl md:text-3xl font-bold">
+            Important FAQ
+          </h1>
           <div>
             <img class="w-24 h-24" src="./assets/chat.gif" alt="" />
           </div>
@@ -76,7 +78,7 @@
             <div class="collapse-title text-xl font-medium">
               What is the Document Object Model (DOM)?
             </div>
-            <div class="collapse-content">
+            <div class="collapse-content text-sm">
               <p>
                 The DOM (Document Object Model) is a tree-like structure that
                 represents a webpage's content, allowing JavaScript to access
@@ -91,8 +93,8 @@
             <div class="collapse-title text-xl font-medium">
               How do you select an element from the DOM?
             </div>
-            <div class="collapse-content">
-              <p>
+            <div class="collapse-content text-sm">
+              <p class="">
                 I can select an element from the DOM by - getElementById(id),
                 getElementsByClassName(className),
                 getElementsByTagName(tagName), querySelector(selector),
@@ -108,7 +110,7 @@
               What is event delegation in the context of the DOM, and why is it
               useful?
             </div>
-            <div class="collapse-content">
+            <div class="collapse-content text-sm">
               <p>
                 Event delegation in JavaScript is a method that enables the
                 management of events on a parent element instead of on
@@ -127,7 +129,7 @@
               How do you manipulate an element's attributes and styles using the
               DOM?
             </div>
-            <div class="collapse-content">
+            <div class="collapse-content text-sm px-2">
               <p>
                 I can use getAttribute(), setAttribute(), and removeAttribute()
                 to manipulate attributes. for example:

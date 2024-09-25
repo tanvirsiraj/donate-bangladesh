@@ -109,7 +109,7 @@ document.getElementById("history").addEventListener("click", function () {
 
   for (const am of allDonation) {
     let div = document.createElement("div");
-    div.classList.add("border", "ps-6", "py-4", "rounded-lg", "space-y-2");
+    div.classList.add("border", "p-6", "py-4", "rounded-lg", "space-y-2");
     div.innerHTML = `
     <p class="text-xl font-semibold">${am.newDonatedAmount}</p>
     <p class="text-[#11111170]">${am.date}</p>
