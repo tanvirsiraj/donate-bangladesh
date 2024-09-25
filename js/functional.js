@@ -4,7 +4,13 @@ document
   .getElementById("donation-for-Noakhali")
   .addEventListener("click", function () {
     const donateAmount = getDonatedAmount("donation-amount-1");
-    if (donateAmount <= 0 || isNaN(donateAmount)) {
+    const totalBalance = document.getElementById("balance").innerText;
+
+    if (
+      donateAmount <= 0 ||
+      isNaN(donateAmount) ||
+      donateAmount > parseFloat(totalBalance)
+    ) {
       document.getElementById("my_modal_5").classList.add("hidden");
       alert("Invalid Donation amount");
     } else {
@@ -28,9 +34,14 @@ document
   .getElementById("donation-for-Feni")
   .addEventListener("click", function () {
     const donateAmount = getDonatedAmount("donation-amount-2");
+    const totalBalance = document.getElementById("balance").innerText;
     // console.log(donateAmount);
 
-    if (donateAmount <= 0 || isNaN(donateAmount)) {
+    if (
+      donateAmount <= 0 ||
+      isNaN(donateAmount) ||
+      donateAmount > parseFloat(totalBalance)
+    ) {
       document.getElementById("my_modal_5").classList.add("hidden");
       alert("Invalid Donation amount");
     } else {
@@ -56,9 +67,14 @@ document
   .getElementById("donation-for-Quota")
   .addEventListener("click", function () {
     const donateAmount = getDonatedAmount("donation-amount-3");
+    const totalBalance = document.getElementById("balance").innerText;
     // console.log(donateAmount);
 
-    if (donateAmount <= 0 || isNaN(donateAmount)) {
+    if (
+      donateAmount <= 0 ||
+      isNaN(donateAmount) ||
+      donateAmount > parseFloat(totalBalance)
+    ) {
       document.getElementById("my_modal_5").classList.add("hidden");
       alert("Invalid Donation amount");
     } else {
